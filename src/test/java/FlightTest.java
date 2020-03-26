@@ -23,6 +23,12 @@ public class FlightTest {
     }
 
     @Test
+    public void canAddPassengertoPassengers(){
+        flight.addPassenger(passenger);
+        assertEquals(1, flight.passengerCount());
+    }
+
+    @Test
     public void canBookPassenger(){
 
     }

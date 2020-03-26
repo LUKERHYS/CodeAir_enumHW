@@ -22,5 +22,13 @@ public class Flight {
         this.departureTime = departureTime;
     }
 
+    public void addPassenger(Passenger passenger){
+        this.passengers.add(passenger);
+    }
+
+    public int passengerCount(){
+        return this.passengers.size();
+    }
+
 
 }
