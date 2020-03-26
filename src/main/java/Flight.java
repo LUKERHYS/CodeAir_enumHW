@@ -30,5 +30,8 @@ public class Flight {
         return this.passengers.size();
     }
 
+    public int spaceLeft(){
+        return this.plane.getCapacity() - passengerCount();
+    }
 
 }

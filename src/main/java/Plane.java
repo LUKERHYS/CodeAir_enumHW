@@ -7,8 +7,4 @@ public class Plane {
     }
 
 
-    public int freeSpace() {
-        return this.plane.getCapacity();
-    }
-
 }

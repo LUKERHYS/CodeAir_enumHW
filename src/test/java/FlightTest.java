@@ -19,7 +19,7 @@ public class FlightTest {
 
     @Test
     public void planeShouldStartEmpty() {
-        assertEquals(416, plane.freeSpace());
+        assertEquals(416, flight.spaceLeft());
     }
 
     @Test
@@ -30,7 +30,9 @@ public class FlightTest {
 
     @Test
     public void canBookPassenger(){
-
+        flight.addPassenger(passenger);
+        flight.addPassenger(passenger);
+        assertEquals(414, flight.spaceLeft());
     }
 
 }
